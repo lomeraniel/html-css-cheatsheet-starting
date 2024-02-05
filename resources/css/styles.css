@@ -74,13 +74,14 @@ p {
 }*/
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
   cursor: pointer;
 }
 
 a:hover {
   color: yellowgreen;
+  text-decoration: none;
 }
 
 a:active {
