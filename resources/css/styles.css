@@ -327,15 +327,15 @@ nav li:last-child {
   z-index: 3;
 }
 
+/* Body of the arrows */
 .arrowbreadcrumb {
   text-align: left;
-  z-index: 3;
 }
 .arrowbreadcrumb li {
   float: left;
   display: inline;
 }
-
+/* Pseudo-elements on top of our elements */
 .arrowbreadcrumb a::before,
 .arrowbreadcrumb a::after {
   content: "";
@@ -347,12 +347,12 @@ nav li:last-child {
 
 .arrowbreadcrumb a {
   font-family: 'Pontano Sans',sans-serif;
-    font-size: 16px;
-    padding: 14px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
+  font-size: 16px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
   color: #fff;
   background: darkcyan;
   text-decoration: none;
@@ -364,17 +364,21 @@ nav li:last-child {
   padding: 0 5px;
 }
 
+/* The total width of our pseudo-elements is 10px, since the border has 5px on the left and 5px on the right. Given this, move the pseudo-elements to the proper location using the following CSS:
+Before and after are used for thad */
 .arrowbreadcrumb a::before {
   left: -10px;
+  /* Arrow tails */
   border-left-color: transparent;
 }
 
 .arrowbreadcrumb a::after {
   left: 100%;
   border-color: transparent;
+  /* Arrowheads */
   border-left-color: darkcyan;
 }
-
+/* Clickability */
 .arrowbreadcrumb a:hover {
   background-color: blue;
 }
