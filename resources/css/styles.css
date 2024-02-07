@@ -315,6 +315,13 @@ nav li:last-child {
   color: red;
 }
 
+.attribute::after {
+  content: "x";
+  color: red;
+  font-size: 10px;
+  vertical-align: super;
+}
+
 /* Arrow Breadcrumbs */
 
 #breadcrumbs2 {
